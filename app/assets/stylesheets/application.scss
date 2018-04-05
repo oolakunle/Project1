@@ -1,0 +1,5 @@
+// This file simply includes bootstrap using SASS (which bootstrap expects)
+// The file starts with an underscore so it is included first alphabetically
+
+@import "bootstrap-sprockets";
+@import "bootstrap";

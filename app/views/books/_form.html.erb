@@ -1,0 +1,12 @@
+<%= form_for @book do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, :placeholder => 'Title', :autofocus => true %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author, :placeholder => 'Author' %>
+
+  <%= f.label :year %>
+  <%= f.number_field :year, :placeholder => 'Year of Publication' %>
+
+  <%= f.submit %>
+<% end %>

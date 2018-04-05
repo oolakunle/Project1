@@ -1,0 +1,15 @@
+<h1><%= @author.name %></h1>
+
+<h3><%= @author.nationality %></h3>
+
+<% unless @author.books.empty? %>
+  <h2>Books</h2>
+    <% @author.books.each do |book| %>
+    <%= link_to book, :title => book.title %>
+  <% end %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit Author', edit_author_path(@author) %>
+  <%= link_to 'Delete Author', @author, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

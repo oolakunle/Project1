@@ -19,38 +19,34 @@ d2 = Discipline.create :name => 'Young Adult'
 d3 = Discipline.create :name => 'Non-Fiction'
 
 Publisher.destroy_all
-p1 = Publisher.create :name => 'Nautical Text Rock'
-p2 = Publisher.create :name => 'Nautical Math Rock'
-p3 = Publisher.create :name => 'Bollywood Bubblegum Pop'
-p4 = Publisher.create :name => 'Folk rock'
-p5 = Publisher.create :name => 'Scottish Misery'
+p1 = Publisher.create :name => 'Penguin'
+p2 = Publisher.create :name => 'Macmillian'
+p3 = Publisher.create :name => 'Oxford Press'
 
 Personal_library.destroy_all
-pl1 = Personal_library.create :title => 'Driving Songs'
-pl2 = Personal_library.create :title => 'Makeout Music'
-pl3 = Personal_library.create :title => 'Code Jams'
-pl4 = Personal_library.create :title => 'Monkey Mongs'
+pl1 = Personal_library.create :title => 'Personal Development'
+pl2 = Personal_library.create :title => 'Life Enhancing'
+pl3 = Personal_library.create :title => 'Meditation'
 
-# Albums and songs
-l1.songs << s1
-l2.songs << s2
-l3.songs << s3
+# Publishers and books
+p1.books << b1
+p2.books << b2
+p3.books << b3
 
-# Artists and songs
-a1.songs << s1
-a2.songs << s2
-a3.songs << s3
+# Authors and books
+a1.books << b1
+a2.books << b2
+a3.books << b3
 
-# Genres and songs
-s1.genres << g1 << g2
-g3.songs << s2
+# Disciplines and books
+b1.disciplines << d1 << d2
+d3.books << b2
 
-# Mixtapes of songs
-m1.songs << s1 << s2 << s3 << s2
-m2.songs << s2 << s3
-m3.songs << s1 << s3
-m4.songs << s2 << s2 << s2
+# Personal Libraries and books
+pl1.books << b1 << b2 << b3 << b2
+pl2.books << b2 << b3
+pl3.books << b1 << b3
 
-# Mixtapes and users
-u1.mixtapes << m1 << m2
-u2.mixtapes << m3 << m4
+# Personal Libraries and users
+u1.personal_libraries << pl1 << pl2
+u2.personal_libraries << pl3
