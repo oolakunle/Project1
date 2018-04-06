@@ -1,24 +1,23 @@
-# README
+# Project 1 - Personal Library
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
 
-Things you may want to cover:
+This project is about creating a personalised library, creating, reading, updating and deleting info as time passes on.
 
-* Ruby version
+## Built With
+* Ruby on Rails
 
-* System dependencies
+## Access
+The project can be accessed at [Project 1](https://project-one-ga.herokuapp.com/)
 
-* Configuration
 
-* Database creation
+## Author
 
-* Database initialization
+* `Abdulmajeed Yusuf` - [Twitter](http:twitter.com/oolakunle)
 
-* How to run the test suite
+## License
 
-* Services (job queues, cache servers, search engines, etc.)
+This project is licensed under the MIT License
 
-* Deployment instructions
-
-* ...
+## Acknowledgment
+* Gratitude to Joel, John and Theo for guidance.
