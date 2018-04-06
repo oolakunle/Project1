@@ -1,9 +1,21 @@
+<div class="inner_links">
+  <nav>
+    <%= link_to 'Home', root_path %>
+    |
+    <%= link_to 'All Books', books_path %>
+    <%= link_to 'New Book', new_book_path %>
+    |
+    <%= link_to 'All Authors', authors_path %>
+    <%= link_to 'New Author', new_author_path %>
+  </nav>
+</div>
+
 <h1>Books</h1>
 
 <% @books.each do |book| %>
   <ul>
-    <li><%= link_to book.author, book %></li>
-    <li><%= book.title %></li>
-    <li><%= book.year %></li>
+    <li><%= link_to book.title, book %></li>
+    <li><%= book.year %><li>
+    <li><%= book.author_id %></li>
   </ul>
 <% end %>

@@ -2,11 +2,11 @@
   <%= f.label :title %>
   <%= f.text_field :title, :placeholder => 'Title', :autofocus => true %>
 
-  <%= f.label :author %>
-  <%= f.text_field :author, :placeholder => 'Author' %>
-
   <%= f.label :year %>
   <%= f.number_field :year, :placeholder => 'Year of Publication' %>
+
+  <%= f.label :author_id %>
+<%= f.select :author_id, Author.pluck(:name, :id), :include_blank => true %>
 
   <%= f.submit %>
 <% end %>

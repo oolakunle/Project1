@@ -35,6 +35,6 @@ class BooksController < ApplicationController
   #Strong params: a whitelist of permitted fields
   private
   def book_params
-    params.require(:book).permit(:title, :year, :author)
+    params.require(:book).permit(:title, :year, :author_id)
   end
 end
